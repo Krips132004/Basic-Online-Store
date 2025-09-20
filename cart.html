@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Basic Store - Cart</title>
+  <link rel="stylesheet" href="./Assesat/CSS/style.css">
+</head>
+<body>
+<header>
+  <div class="logo">Basic Store</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="productmanage.html">Manage Product</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Your Cart</h2>
+
+  <table id="cartTable">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Image</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="cartBody"></tbody>
+  </table>
+
+  <div class="cart-actions">
+    <button class="btn-primary" onclick="showTotal()">Show Total</button>
+    <button class="btn-danger" onclick="clearCart()">Clear Cart</button>
+  </div>
+  <div id="cartTotal"></div>
+</main>
+
+<script src="./Assesat/JS/script.js"></script>
+<script>
+  loadCart();
+</script>
+</body>
+</html>

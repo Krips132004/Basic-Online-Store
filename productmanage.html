@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Products</title>
+  <link rel="stylesheet" href="./Assesat/CSS/style.css">
+</head>
+<body>
+<header>
+  <div class="logo">Basic Store</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Manage Products</h2>
+
+  <form id="productForm">
+    <label>ID</label><input type="text" id="prodId" required>
+    <label>Name</label><input type="text" id="prodName" required>
+    <label>Price</label><input type="number" id="prodPrice" required>
+    <label>Image URL</label><input type="text" id="prodImage">
+    <label>Description</label><input type="text" id="prodDesc">
+    <label>Category</label><input type="text" id="prodCategory">
+    <button type="submit" class="btn-primary">Add Product</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Name</th><th>Price</th><th>Image</th><th>Description</th><th>Category</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="productTableBody"></tbody>
+  </table>
+</main>
+
+<script src="./Assesat/JS/script.js"></script>
+<script>
+  loadProducts();
+</script>
+</body>
+</html>
