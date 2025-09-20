@@ -89,15 +89,23 @@ cart → Stores cart items
 
 viewProductId → Stores the product ID currently being viewed
 
-🖼 Screenshots
+## 🖼 Screenshots
 
-Home Page : (Home Page.png)
+**Home Page**  
+![Home Page](HomePage.png)
 
-View Product Page
+**View Product Page**  
+![View Product](viewproduct.png)
 
-Cart Page
+**Cart Page**  
+![Cart Page](cart.png)
 
-Product Management Page
+**Product Management Page**  
+![Product Manage](productmanage.png)
+
+**Local Storage**  
+![Local Storage](LocalStorage.png)
+
 
 
 
